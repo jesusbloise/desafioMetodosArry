@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestor de Tareas</h1>
+        <div class="input-section">
+            <input type="text" id="taskInput" placeholder="Ingrese una tarea" onkeypress="handleKeyPress(event)">
+            <button onclick="agregarTarea()">Agregar Tarea</button>
+        </div>
+        <div class="main-content">
+            <div class="stats">
+                <div>Total de Tareas: <span id="totalTareas">0</span></div>
+                <div>Tareas Completadas: <span id="tareasCompletadas">0</span></div>
+            </div>
+            <div class="task-list">
+                <div class="task-list-header">
+                    <span>ID</span>
+                    <span>Nombre</span>
+                    <span>Acciones</span>
+                </div>
+                <div id="listaTareas"></div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
+<!-- Descripción:
+Estructura básica del HTML: Define la estructura de la página web.
+Encabezado de la página: <h1>Gestor de Tareas</h1> es el título principal.
+Sección de entrada: Contiene un campo de texto para ingresar la tarea y un botón para agregarla. El campo de texto también escucha el evento keypress para detectar cuando se presiona la tecla Enter.
+Sección principal: Divide la parte inferior en dos: estadísticas (contadores) y lista de tareas.
+Estadísticas: Muestra el total de tareas y las tareas completadas.
+Lista de tareas: Contiene un encabezado para ID, Nombre y Acciones, y un div para las tareas que se agregarán dinámicamente. -->

@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.input-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-section input {
+    width: 70%;
+    padding: 5px;
+}
+
+.input-section button {
+    padding: 5px 10px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task-list {
+    width: 70%;
+}
+
+.task-list-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+    font-weight: bold;
+}
+
+#listaTareas .task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#listaTareas .task span {
+    flex: 1;
+}
+
+#listaTareas .task button {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+    margin-left: 10px;
+}
+/* Descripción:
+Estilos generales: Se aplican estilos a todo el cuerpo (body) de la página para centrar el contenido y dar un fondo gris claro.
+Contenedor principal: Se estiliza con fondo blanco, padding, bordes redondeados y una sombra.
+Título: Se centra el texto.
+Sección de entrada: Se distribuye el campo de texto y el botón en una línea horizontal.
+Sección principal: Se divide en estadísticas (a la izquierda) y lista de tareas (a la derecha) mediante flexbox.
+Estadísticas: Se colocan una debajo de la otra.
+Lista de tareas: Se ajusta el ancho y se define el estilo del encabezado y de las tareas. */
